@@ -1,0 +1,17 @@
+{
+    // 使用 Ruff 进行格式化 (类似 Checkstyle + Formatter)
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    // 开启 Pylance 的严格类型检查模式
+    // 这会强迫你写类型注解，类似 Java 编译报错
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.autoImportCompletions": true,
+    // 指定解释器路径 (指向 uv 创建的虚拟环境)
+    "python.defaultInterpreterPath": ".venv/bin/python"
+}
